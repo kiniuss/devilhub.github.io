@@ -1,0 +1,38 @@
+<HTML>
+    <HEAD>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-2">
+    <SCRIPT LANGUAGE= "JavaScript" type= "text/javascript">
+    <!-- Ukrycie przed przeglądarkami nie obsługującymi JavaScriptów
+    var counter = 0;
+    var retries = 3;
+    function sprawdz()
+    {
+      if(document.form1.haslo.value != "tajny_kod"){
+        if(++counter >= retries){
+          document.location.href = "http://nazwa.domeny";
+        }
+        else
+          alert("Niepoprawne hasło!\nPozostałe próby: " + parseInt(retries - counter));
+      }
+      else{
+        document.location.href = "wejdz.html";
+      }
+    }
+    // Koniec kodu JavaScript -->
+    </SCRIPT>
+    </HEAD>
+    <BODY>
+    <CENTER>
+    <H2>Podaj hasło dostępu</H2>
+    <FORM NAME = "form1">
+    <INPUT TYPE="password"
+           NAME="haslo"
+    >
+    <BR><BR>
+    <INPUT TYPE="button"
+           VALUE="Wejdź"
+           onClick="sprawdz();"
+    >
+    </FORM>
+    </BODY>
+    </HTML>
